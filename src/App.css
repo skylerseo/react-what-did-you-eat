@@ -180,7 +180,7 @@ select {
   --color-black: #212121;
   --color-gray: #848484;
   --color-light-gray: #f1f1f1;
-  --color-grapefruit: #FF4066;
+  --color-grapefruit: #ff5967;
   --color-red: #FF1414;
   --color-blue: #26B3FF;
   --color-green: #66D41A;
@@ -237,7 +237,7 @@ button:focus {
 }
 
 .navbar-count {
-  color: #fff;
+  color: var(--color-white);
   background-color: var(--color-black);
   display: inline-block;
   text-align: center;
@@ -260,7 +260,7 @@ button:focus {
 
 .add-input {
   width: 400px;
-  border: 1px solid #797979;
+  border: 1px solid var(--color-gray);
   padding: 0 0.5em;
   border-radius: 8px;
   font-size: 1.2rem;
@@ -269,7 +269,7 @@ button:focus {
 
 .add-button {
   background-color: var(--color-grapefruit);
-  color: #fff;
+  color: var(--color-white);
   padding: 0 0.5em;
   border-radius: 8px;
   font-size: 1.4rem;
@@ -286,8 +286,8 @@ button:focus {
 }
 
 .foods-reset {
-  background-color: var(--color-grapefruit);
-  color: #fff;
+  background-color: var(--color-red);
+  color: var(--color-white);
   padding: 0 0.5em;
   border-radius: 8px;
   margin-top: 2em;
@@ -306,12 +306,12 @@ button:focus {
 
 .food-name {
   color: #1a1a1a;
-  border-bottom: 2px dashed #FFC800;
+  border-bottom: 2px dashed var(--color-yellow);
   font-weight: var(--font-weight-light);
 }
 
 .food-count {
-  color: #fff;
+  color: var(--color-white);
   background-color: var(--color-black);
   display: inline-block;
   text-align: center;
@@ -340,7 +340,7 @@ button:focus {
 }
 
 .food-delete {
-  color: var(--color-red);
+  color: var(--color-gray);
 }
 
 @media screen and (max-width: 768px) {

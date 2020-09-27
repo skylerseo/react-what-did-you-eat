@@ -29,7 +29,7 @@ class Food extends PureComponent {
             <i className="fas fa-minus"></i>
           </button>
           <button className="food-button food-delete" onClick={this.handleDelete}>
-            <i className="fas fa-times"></i>
+            <i className="fas fa-trash-alt"></i>
           </button>
         </div>
       </li>
