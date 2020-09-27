@@ -1,38 +1,342 @@
-.App {
-  text-align: center;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  line-height: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* My code from here */
+
+:root {
+  /* color */
+  --color-white: #fff;
+  --color-black: #212121;
+  --color-gray: #848484;
+  --color-light-gray: #f1f1f1;
+  --color-grapefruit: #FF4066;
+  --color-red: #FF1414;
+  --color-blue: #26B3FF;
+  --color-green: #66D41A;
+  --color-yellow: #FFC800;
+
+  /* font weight */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+  --font-weight-thin: 100;
+}
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: none;
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:focus {
+  outline: none;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.navbar-logo {
+  color: var(--color-yellow);
+  margin-right: 0.4em;
+}
+
+.navbar-title {
+  color: var(--color-black);
+  font-weight: var(--font-weight-bold);
+}
+
+.navbar-count {
+  color: #fff;
+  background-color: var(--color-black);
+  display: inline-block;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-left: 0.2em;
+  border-radius: 50%;
+  font-weight: var(--font-weight-medium);
+}
+
+/* FoodAddForm */
+
+.add-form {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 1.6em;
+}
+
+.add-input {
+  border: 1px solid #797979;
+  padding: 0 0.5em;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.add-button {
+  background-color: var(--color-grapefruit);
+  color: #fff;
+  padding: 0 0.5em;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Foods */
+
+.foods {
+  background-color: var(--color-light-gray);
+  padding: 1em;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.foods-reset {
+  background-color: var(--color-grapefruit);
+  color: #fff;
+  padding: 0 0.5em;
+  border-radius: 8px;
+  margin-top: 2em;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Food */
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.food-name {
+  color: #1a1a1a;
+  border-bottom: 2px dashed #FFC800;
+  font-weight: var(--font-weight-light);
+}
+
+.food-count {
+  color: #fff;
+  background-color: var(--color-black);
+  display: inline-block;
+  text-align: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  margin-left: 10em;
+  border-radius: 50%;
+  font-weight: var(--font-weight-medium);
+}
+
+.food-btns {
+  display: inline;
+}
+
+.food-button {
+  font-size: 1.6rem;
+}
+
+.food-increase {
+  color: var(--color-blue);
+}
+
+.food-decrease {
+  color: var(--color-green);
+}
+
+.food-delete {
+  color: var(--color-red);
 }
