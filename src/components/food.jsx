@@ -20,8 +20,8 @@ class Food extends PureComponent {
     return (
       <li className="food">
         <span className="food-name">{name}</span>
-        <span className="food-count">{count}</span>
         <div className="food-btns">
+          <span className="food-count">{count}</span>
           <button className="food-button food-increase" onClick={this.handleIncrement}>
             <i className="fas fa-plus"></i>
           </button>

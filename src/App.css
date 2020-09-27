@@ -211,6 +211,7 @@ button {
   background-color: transparent;
 }
 
+input:focus,
 button:focus {
   outline: none;
 }
@@ -258,6 +259,7 @@ button:focus {
 }
 
 .add-input {
+  width: 400px;
   border: 1px solid #797979;
   padding: 0 0.5em;
   border-radius: 8px;
@@ -278,9 +280,9 @@ button:focus {
 
 .foods {
   background-color: var(--color-light-gray);
-  padding: 1em;
+  padding: 1.6em;
   border-radius: 8px;
-  width: 500px;
+  width: 560px;
 }
 
 .foods-reset {
@@ -316,7 +318,7 @@ button:focus {
   width: 1.8rem;
   height: 1.8rem;
   line-height: 1.8rem;
-  margin-left: 10em;
+  margin-right: 1em;
   border-radius: 50%;
   font-weight: var(--font-weight-medium);
 }
@@ -339,4 +341,80 @@ button:focus {
 
 .food-delete {
   color: var(--color-red);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    font-size: 1.8rem;
+  }
+
+  .navbar-count {
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+  }
+
+  .add-form {
+    margin-top: 0.2em;
+    margin-bottom: 1.6em;
+  }
+
+  .add-input {
+    width: 75%;
+    font-size: 0.7rem;
+  }
+
+  .add-button {
+    padding: 0 0.5em;
+    font-size: 1rem;
+  }
+
+  .foods {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.6em;
+  }
+
+  .food {
+    font-size: 1.2rem;
+    margin-bottom: 0.6em;
+    display: block;
+  }
+
+  .food-name {
+    width: 100%;
+  }
+
+  .food-count {
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    margin: 0 0.2em;
+  }
+
+  .food-btns {
+    width: 100%;
+    display: block;
+    margin-top: 0.3em;
+  }
+
+  .food-button {
+    font-size: 1.2rem;
+  }
+
+  .foods-reset {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .navbar {
+    font-size: 1.6rem;
+  }
+
+  .navbar-count {
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+  }
 }

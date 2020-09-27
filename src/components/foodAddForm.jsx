@@ -17,9 +17,10 @@ const FoodAddForm = memo(props => {
         ref={inputRef}
         type="text"
         className="add-input"
-        placeholder="먹은 음식을 입력해주세요"
+        placeholder="먹은 음식을 입력해주세요 (최대 17자)"
+        maxlength="17"
       />
-      <button className="add-button">Add</button>
+      <button className="add-button">추가</button>
     </form>
   );
 });

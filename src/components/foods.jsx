@@ -20,7 +20,7 @@ class Foods extends Component {
               ))}
           </ul>
           <button className="foods-reset" onClick={this.props.onReset}>
-            Reset All
+            초기화
           </button>
         </div>
       </>

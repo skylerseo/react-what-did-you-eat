@@ -8,7 +8,7 @@ class App extends Component {
     foods: [
       { id: 1, name: '국밥', count: 0 },
       { id: 2, name: '치킨', count: 0 },
-      { id: 3, name: '곱창', count: 0 },
+      { id: 3, name: '피자', count: 0 },
     ],
   };
 
