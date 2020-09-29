@@ -1,6 +1,6 @@
 # Title: What did you eat? (오늘 뭐 먹었어요?)
-## Tools: React, yarn, CSS, HTML, JavaScript
-## URL: <https://skylerseo.github.io/react-what-did-you-eat>
+### Tools: React, yarn, CSS, HTML, JavaScript
+### URL: <https://skylerseo.github.io/react-what-did-you-eat>
 ### Screenshot Image
 ![what-did-you-eat](https://user-images.githubusercontent.com/59784467/94500419-3bd36300-023a-11eb-8901-e1a8d1967f41.jpg)
 
