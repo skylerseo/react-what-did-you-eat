@@ -361,12 +361,14 @@ button:focus {
 
   .add-input {
     width: 75%;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
   }
 
   .add-button {
     padding: 0 0.5em;
     font-size: 1rem;
+    border-radius: 4px;
   }
 
   .foods {
@@ -404,6 +406,7 @@ button:focus {
 
   .foods-reset {
     font-size: 1rem;
+    border-radius: 4px;
   }
 }
 
@@ -416,5 +419,9 @@ button:focus {
     width: 1.8rem;
     height: 1.8rem;
     line-height: 1.8rem;
+  }
+
+  .add-input {
+    font-size: 0.65rem;
   }
 }

@@ -15,7 +15,8 @@ class App extends Component {
   handleIncrement = food => {
     const foods = this.state.foods.map(item => {
       if (item.id === food.id) {
-        return { ...food, count: food.count + 1 };
+        const count = food.count + 1;
+        return { ...food, count: count > 99 ? 99 : count };
       }
       return item;
     });
